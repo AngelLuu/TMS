@@ -1,0 +1,40 @@
+.font-column {
+  /* 设置文字垂直排列方向，从右到左 */
+  writing-mode: vertical-rl;
+  /* 设置文字方向为直立 */
+  text-orientation: upright;
+  /* 防止文字换行 */
+  white-space: nowrap;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex{
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mr-20px {
+  margin-right: 20px;
+}

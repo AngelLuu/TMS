@@ -1,6 +1,7 @@
 import { defineConfig, loadEnv } from 'vite'
 import path from 'path'
 import createVitePlugins from './vite/plugins'
+import unocss from '@unocss/postcss'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode, command }) => {
@@ -51,7 +52,11 @@ export default defineConfig(({ mode, command }) => {
                 }
               }
             }
-          }
+          },
+          unocss()
+          // {
+          //   '@unocss/postcss': {},
+          // }
         ]
       }
     }
