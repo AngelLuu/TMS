@@ -70,6 +70,18 @@ export const constantRoutes = [
       }
     ]
   },
+    {//demo测试
+      path: '/demo',
+      component: Layout,
+      children: [
+        {
+          path: 'index',
+          component: () => import('@/views/demo/index.vue'),
+          name: '测试',
+          meta: { title: '测试页面', icon: 'user' }
+        }
+      ]
+    },
   {
     path: '/user',
     component: Layout,
